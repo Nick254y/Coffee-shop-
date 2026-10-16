@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kid Càfé | Coffee & Good Moments</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #faf6ef;
+      color: #3e2b22;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #4b3025;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background: #65432f;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .hero {
+      min-height: 380px;
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(
+        rgba(35, 20, 12, 0.65),
+        rgba(35, 20, 12, 0.65)
+      ), url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1400&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: clamp(32px, 7vw, 52px);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #d6a66c;
+      color: #2d2018;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+      scroll-margin-top: 15px;
+    }
+
+    section h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: #806b5d;
+      margin-bottom: 25px;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit, minmax(220px, 1fr)
+      );
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .item {
+      background: white;
+      border-radius: 14px;
+      padding: 25px 18px;
+      box-shadow: 0 4px 15px #00000010;
+    }
+
+    .item .emoji {
+      font-size: 40px;
+    }
+
+    .item h3 {
+      margin: 10px 0;
+    }
+
+    .price {
+      color: #93643d;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    #about {
+      background: #efe2d0;
+    }
+
+    #about p {
+      max-width: 650px;
+      margin: 12px auto;
+    }
+
+    #contact {
+      background: #faf6ef;
+    }
+
+    footer {
+      background: #4b3025;
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+
+    footer a {
+      color: #f1c68f;
+    }
+
+    @media (max-width: 480px) {
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+
+      .hero {
+        padding: 65px 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Kid Càfé ☕</h1>
+    <p>Every cup tells a story.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <h2>A Little Coffee, A Lot of Happiness</h2>
+      <p>Fresh coffee, tasty treats, unforgettable moments.</p>
+      <a class="btn" href="#menu">Explore Our Menu</a>
+    </section>
+
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <p class="subtitle">Something delicious for everyone.</p>
+
+      <div class="menu">
+        <article class="item">
+          <div class="emoji">☕</div>
+          <h3>Hot Coffee</h3>
+          <p>Freshly brewed, rich and smooth.</p>
+          <p class="price">KSh 150</p>
+        </article>
+
+        <article class="item">
+          <div class="emoji">🥤</div>
+          <h3>Iced Coffee</h3>
+          <p>Cool, refreshing coffee.</p>
+          <p class="price">KSh 250</p>
+        </article>
+
+        <article class="item">
+          <div class="emoji">🥐</div>
+          <h3>Fresh Pastries</h3>
+          <p>Delicious treats for your break.</p>
+          <p class="price">KSh 120</p>
+        </article>
+
+        <article class="item">
+          <div class="emoji">🍰</div>
+          <h3>Chocolate Cake</h3>
+          <p>A sweet slice of happiness.</p>
+          <p class="price">KSh 200</p>
+        </article>
+
+        <article class="item">
+          <div class="emoji">🥪</div>
+          <h3>Sandwiches</h3>
+          <p>Freshly prepared and satisfying.</p>
+          <p class="price">KSh 300</p>
+        </article>
+
+        <article class="item">
+          <div class="emoji">🍵</div>
+          <h3>Tea</h3>
+          <p>A comforting cup, served hot.</p>
+          <p class="price">KSh 100</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Kid Càfé</h2>
+      <p>
+        Welcome to Kid Càfé, a cozy place created for coffee
+        lovers, friends, students, and everyone who appreciates
+        good food and great company.
+      </p>
+      <p>
+        Our goal is simple: serve delicious refreshments and
+        make every visit feel special.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Visit or Contact Us</h2>
+      <p class="subtitle">
+        We'd love to welcome you to Kid Càfé!
+      </p>
+      <p>Phone: Add your café phone number here</p>
+      <p>Location: Add your café location here</p>
+      <a class="btn" href="#home">Back to Top ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Kid Càfé. All rights reserved.</p>
+    <p>Made with ☕ and love.</p>
+  </footer>
+
+</body>
+</html>
